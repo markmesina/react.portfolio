@@ -13,7 +13,7 @@ const Navbar = props => (
             <div className="nav justify-content-end">
               <Link className="navbar-brand" to="/">About Me</Link>
               <Link className="navbar-brand">|</Link>
-              <Link className="navbar-brand" href="portfolio.html">Portfolio</Link>
+              <Link className="navbar-brand" to='/Portfolio'>Portfolio</Link>
               <Link className="navbar-brand">|</Link>
               <Link className="navbar-brand" to="/Contact">Contact</Link>
             </div>
