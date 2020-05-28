@@ -9,7 +9,7 @@ const About = props => (
 
         <hr />
 
-        <img src={Headshot} className="float-left" alt="headshot" />
+        <img src={Headshot} className="float-left" alt="headshot"/>
 
         <p>
             Mark Mesina, Bachelor of Science major in Business Management.
