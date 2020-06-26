@@ -9,7 +9,6 @@ import Footer from './../../components/Footer'
 const App = props => (
   <Router>
     <div>
-    <Navbar/>
     <Route exact path ="/" component = {About}/>
     <Route exact path ="/Contact" component = {Contact}/>
     <Route exact path ="/Portfolio" component = {Portfolio}/>
