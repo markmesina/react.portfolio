@@ -10,7 +10,7 @@ const Headshot = () => (
     href='https://www.linkedin.com/in/mark-mesina-005911126/'
     target='_blank'
     centered
-    circular
+    bordered
   />
 )
 

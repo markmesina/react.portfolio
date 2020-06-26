@@ -1,10 +1,10 @@
 .landingImage {
     background-image: url('./assets/images/background.png') !important;
-    background-repeat: repeat;
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: auto;
+    width: auto;
     background-attachment: fixed;
-
-    /* opacity: 0.5 */
 };
 
 #grad {
