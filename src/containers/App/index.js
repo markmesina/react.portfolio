@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import About from './../../containers/About';
+import Homepage from './../../containers/Homepage';
+import Biography from './../Biography'
 import Navbar from '../../components/Navbar';
 import Contact from './../../containers/Contact';
 import Portfolio from './../../containers/Portfolio';
@@ -8,13 +9,11 @@ import Footer from './../../components/Footer'
 
 const App = props => (
   <Router>
-    <div>
-    <Route exact path ="/" component = {About}/>
-    <Route exact path ="/Contact" component = {Contact}/>
-    <Route exact path ="/Portfolio" component = {Portfolio}/>
+    <Route exact path ="/" component = {Homepage}/>
+    <Route exact path ="/biography" component = {Biography} />
+    <Route exact path ="/contact" component = {Contact}/>
+    <Route exact path ="/projects" component = {Portfolio}/>
     <Footer/>
-
-    </div>
   </Router>
 )
   export default App;

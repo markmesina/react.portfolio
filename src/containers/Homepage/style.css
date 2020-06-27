@@ -1,0 +1,8 @@
+.landingImage {
+    background-image: url('./assets/images/background.png') !important;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: auto;
+    width: auto;
+    background-attachment: fixed;
+};

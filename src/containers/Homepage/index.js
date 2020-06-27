@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import {
   Button,
   Container,
-  Divider,
   Grid,
   Header,
   Icon,
@@ -17,11 +17,6 @@ import {
 } from 'semantic-ui-react';
 import Headshot from './../../components/Headshot'
 import './style.css';
-// import headshot from './assets/images/headshot.jpg';
-// import BgImage from './assets/images/devcollab.png';
-// Heads up!
-// We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
-// For more advanced usage please check Responsive docs under the "Usage" section.
 const getWidth = () => {
   const isSSR = typeof window === 'undefined'
 
@@ -105,12 +100,12 @@ class DesktopContainer extends Component {
               size='large'
             >
               <Container>
-                <Menu.Item as='a' active>
+                <Menu.Item as={Link} to= '/' active>
                   Home
                 </Menu.Item>
-                <Menu.Item as='a'>Credentials</Menu.Item>
-                <Menu.Item as='a'>Contact</Menu.Item>
-                <Menu.Item as='a'>Projects</Menu.Item>
+                <Menu.Item as= {Link} to = '/biography'>Biography</Menu.Item>
+                <Menu.Item as= {Link} to = '/contact'>Contact</Menu.Item>
+                <Menu.Item as= {Link} to = '/projects'>Projects</Menu.Item>
                 <Menu.Item position='right'>
                 </Menu.Item>
               </Container>
@@ -157,11 +152,9 @@ class MobileContainer extends Component {
           <Menu.Item as='a' active>
             Home
           </Menu.Item>
-          <Menu.Item as='a'>Work</Menu.Item>
-          <Menu.Item as='a'>Company</Menu.Item>
-          <Menu.Item as='a'>Careers</Menu.Item>
-          <Menu.Item as='a'>Log in</Menu.Item>
-          <Menu.Item as='a'>Sign Up</Menu.Item>
+          <Menu.Item as='a'>Biography</Menu.Item>
+          <Menu.Item as='a'>Contact</Menu.Item>
+          <Menu.Item as='a'>Projects</Menu.Item>
         </Sidebar>
 
         <Sidebar.Pusher dimmed={sidebarOpened}>
