@@ -8,9 +8,9 @@ class Contact extends Component {
       <div className="contact-body">
         <Grid className="contact-grid">
           <Cell col={6}>
-            <h2>Paul Hanna</h2>
+            <h2>Mark Mesina</h2>
             <img
-              src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
+              src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/321424_10151369935633501_1547941262_n.jpg?_nc_cat=106&_nc_sid=09cbfe&_nc_ohc=rq8O4pcJncAAX_sHdGn&_nc_ht=scontent-sjc3-1.xx&oh=0d7d619eeff76de61939819119880b5a&oe=5F1AFCE0"
               alt="avatar"
               style={{height: '250px'}}
                />
@@ -26,21 +26,14 @@ class Contact extends Component {
                 <ListItem>
                   <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
                     <i className="fa fa-phone-square" aria-hidden="true"/>
-                    (123) 456-7890
-                  </ListItemContent>
-                </ListItem>
-
-                <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                    <i className="fa fa-fax" aria-hidden="true"/>
-                    (123) 456-7890
+                    (925)214-9269
                   </ListItemContent>
                 </ListItem>
 
                 <ListItem>
                   <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
                     <i className="fa fa-envelope" aria-hidden="true"/>
-                    someone@example.com
+                    markmesina69@gmail.com
                   </ListItemContent>
                 </ListItem>
 
