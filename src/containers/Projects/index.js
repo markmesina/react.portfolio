@@ -15,7 +15,7 @@ class Projects extends Component {
           
           {/* Project 1 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >Fridge Raider</CardTitle>
+            <CardTitle style={{color: 'black', fontWeight:'bold', height: '176px', background: 'url(https://serving.photos.photobox.com/17497766c86f88c5716e9985d25a63b24e0e2c44e566a20ae343518919027307b2833666.jpg) center / cover'}} >Fridge Raider</CardTitle>
             <CardText>
             • An app that takes in the user’s current food items in the fridge via user input and uses that data to do a search for possible recipes. The search is made by making an API request on EdamamAPI
             </CardText>	 
@@ -32,7 +32,7 @@ class Projects extends Component {
 
           {/* Project 2 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle className = 'codefriender' style={{color: '#fff', height: '176px',background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >CodeFriender</CardTitle>
+            <CardTitle className = 'codefriender' style={{color: 'black', fontWeight:"bold", height: '176px',background: 'url(https://serving.photos.photobox.com/16053292b919834cbcab53b0d67614a114737545cc314ec6b51b3ec896a2e873284d04eb.jpg) center / cover'}} >CodeFriender</CardTitle>
             <CardText>
             •	An app that requires users to sign up and matches them using their strengths and weaknesses on a subject to collaborate on further learning. The app features user matching, event planning and event messaging.
             </CardText>
@@ -49,14 +49,17 @@ class Projects extends Component {
 
           {/* Project 3 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #3</CardTitle>
+            <CardTitle style={{color: 'black', fontWeight: 'bold', height: '176px', background: 'url(https://miro.medium.com/max/3780/1*o-9xgkkyBgkhnBVN_Wxs6Q.png) center / cover'}} >React Todo App</CardTitle>
             <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+              A simple introduction App on how to build apps using React Redux and features the CRUD template. It features authorization, counter component and a todo component.
             </CardText>
             <CardActions border>
-              <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored
+              as = 'a'
+              href = 'https://github.com/markmesina/reduxTodo'>GitHub</Button>
+              <Button colored
+              as = 'a'
+              href = 'https://reduxtodo2020.herokuapp.com/'>Deployed Link</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -68,11 +71,27 @@ class Projects extends Component {
       )
     } else if(this.state.activeTab === 1) {
       return (
-        <div><h1>This is Angular</h1></div>
+        <div className = 'project-grid'>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://img.itch.zone/aW1hZ2UvMTgxNDI1Lzg0NzY2OS5wbmc=/original/ygxXL7.png) center / cover'}} >Bunny Defender</CardTitle>
+            <CardText>
+             Bunny Defender, an app which help players defend the world of bunnies! Try your best defeat the asteroids and save the world of bunnies.
+            </CardText>	 
+            <CardActions border>
+              <Button colored as = 'a' href= 'https://github.com/markmesina/bunny.defender'
+              target = '_blank'>GitHub</Button>
+              <Button colored as = 'a' href = 'https://markmesina.github.io/bunny.defender/'
+              target = '_blank'>Deployed Link</Button>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+        </div>
       )
     } else if(this.state.activeTab === 2) {
       return (
-        <div><h1>This is VueJS</h1></div>
+        <div><h1>This is Node</h1></div>
       )
     } else if(this.state.activeTab === 3) {
       return (
@@ -89,8 +108,8 @@ class Projects extends Component {
       <div>
         <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
           <Tab>React</Tab>
-          <Tab>Angular</Tab>
-          <Tab>VueJS</Tab>
+          <Tab>JavaScript</Tab>
+          <Tab>Node</Tab>
           <Tab>MongoDB</Tab>
         </Tabs>
 
