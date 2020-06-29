@@ -71,7 +71,7 @@ class Projects extends Component {
       )
     } else if(this.state.activeTab === 1) {
       return (
-        <div className = 'project-grid'>
+        <div className = 'projects-grid'>
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://img.itch.zone/aW1hZ2UvMTgxNDI1Lzg0NzY2OS5wbmc=/original/ygxXL7.png) center / cover'}} >Bunny Defender</CardTitle>
             <CardText>
@@ -87,7 +87,24 @@ class Projects extends Component {
               <IconButton name="share" />
             </CardMenu>
           </Card>
+
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://github.com/sayantanm19/js-music-player/blob/master/output/html-css.png?raw=true) center / cover'}} >Music Player</CardTitle>
+            <CardText>
+             A simple Music Player created in Vanilla JavaScript. Music is provided by an online link with basic functionalities such as: Play, Pause, Stop, Next and Rewind.
+            </CardText>	 
+            <CardActions border>
+              <Button colored as = 'a' href= 'https://github.com/markmesina/js-musicplayer'
+              target = '_blank'>GitHub</Button>
+              <Button colored as = 'a' href = 'https://markmesina.github.io/js-musicplayer/'
+              target = '_blank'>Deployed Link</Button>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
         </div>
+        
       )
     } else if(this.state.activeTab === 2) {
       return (
