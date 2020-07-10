@@ -105,16 +105,16 @@ class Projects extends Component {
           </Card>
         </div>
         
-      )
-    } else if(this.state.activeTab === 2) {
-      return (
-        <div><h1>This is Node</h1></div>
-      )
-    } else if(this.state.activeTab === 3) {
-      return (
-        <div><h1>This is MongoDB</h1></div>
-      )
-    }
+      )}
+    // } else if(this.state.activeTab === 2) {
+    //   return (
+    //     <div><h1>This is Node</h1></div>
+    //   )
+    // } else if(this.state.activeTab === 3) {
+    //   return (
+    //     <div><h1>This is MongoDB</h1></div>
+    //   )
+    // }
 
   }
 
@@ -126,8 +126,8 @@ class Projects extends Component {
         <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
           <Tab>React</Tab>
           <Tab>JavaScript</Tab>
-          <Tab>Node</Tab>
-          <Tab>MongoDB</Tab>
+          {/* <Tab>Node</Tab>
+          <Tab>MongoDB</Tab> */}
         </Tabs>
 
 

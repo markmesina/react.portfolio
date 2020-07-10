@@ -5,8 +5,8 @@ import React, { Component } from 'react';
 class Biography extends Component {
   render() {
     return(
-    <div className ='bio-page' style={{width: '80%', margin: 'auto'}}>
-    <h1>Biography</h1>
+    <div className ='bio-page' style={{width: '80%', margin: 'auto', flex:'display'}}>
+    <h1 style={{marginBottom: '1rem'}}>Biography</h1>
     <hr></hr>
     <p>
       An aspiring Full Stack Web Engineer with an extensive background in Business Management. A passionate, problem-solving leader,
