@@ -39,7 +39,7 @@ class Projects extends Component {
             <CardActions border>
               <Button colored as ='a' href='https://github.com/adrianromero13/CodeFrienderAuth'
               target ='_blank'>GitHub</Button>
-              <Button colored as ='a' hre='https://codefriender-auth.herokuapp.com/'
+              <Button colored as ='a' href='https://codefriender-auth.herokuapp.com/'
               target = '_blank'>Deployed Link</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
@@ -56,9 +56,11 @@ class Projects extends Component {
             <CardActions border>
               <Button colored
               as = 'a'
+              target = '_blank'
               href = 'https://github.com/markmesina/reduxTodo'>GitHub</Button>
               <Button colored
               as = 'a'
+              target = '_blank'
               href = 'https://reduxtodo2020.herokuapp.com/'>Deployed Link</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
